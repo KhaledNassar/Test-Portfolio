@@ -6,7 +6,6 @@
     <title>Khaled Ahmed Nassar - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 <body>
 
@@ -14,12 +13,21 @@
     <nav id="navbar">
         <div class="nav-container">
             <div class="nav-name">Khaled Ahmed Nassar</div>
-            <ul class="nav-links">
+            
+            <!-- Hamburger Menu -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            
             <div class="resume-btn">
                 <a href="https://drive.google.com/file/d/1w90m8d2YzPkOZ4vtDIhlqz4rMeqCh6hz/view?usp=drive_link" target="_blank">
                     My Resume <span class="resume-icon">↗</span>
@@ -31,25 +39,30 @@
     <!-- Hero Section -->
     <section id="hero">
         <div class="hero-wrapper">
+            <div class="hero-img-box hero-img-mobile">
+                <img src="images/profile.jpg" class="hero-img" alt="Khaled Profile Image">
+            </div>
+            
             <div class="hero-text">
                 <h4 class="highlight">SOFTWARE TESTER</h4>
                 <h1 class="hero-title">Hey, I'm <span>Khaled.</span></h1>
                 <p class="hero-desc">
-                    I’m a Software Tester with practical experience in Manual and API testing, and a growing focus on Test Automation. I create clear test cases, identify bugs, validate APIs, and help deliver high-quality software in Agile teams.
-I’ve worked with tools like Postman, Selenium, TestNG, Cucumber, JMeter, SQL, Git, and Jira, and I’m currently strengthening my automation skills to build more efficient testing workflows.
-With an engineering background and exposure to cybersecurity, I approach testing with strong analytical thinking and attention to detail. I’m passionate about quality, continuous learning, and improving the overall user experience.
+                    I'm a Software Tester with practical experience in Manual and API testing, and a growing focus on Test Automation. I create clear test cases, identify bugs, validate APIs, and help deliver high-quality software in Agile teams. I've worked with tools like Postman, Selenium, TestNG, Cucumber, JMeter, SQL, Git, and Jira, and I'm currently strengthening my automation skills to build more efficient testing workflows. With an engineering background and exposure to cybersecurity, I approach testing with strong analytical thinking and attention to detail. I'm passionate about quality, continuous learning, and improving the overall user experience.
                 </p>
 
                 <!-- Companies -->
-                <div class="companies-section" style="margin-top:30px;">
-                    <p class="companies-title">Companies I’ve worked with</p>
+                <div class="companies-section">
+                    <p class="companies-title">Companies I've worked with</p>
                     <div class="companies-logos">
-                        <a href="https://bod.com.sa/" target="_blank"><img src="companies/company1.png" alt="Company 1"></a>
-                        <!-- باقي الشركات تضيف هنا -->
+                        <a href="https://bod.com.sa/" target="_blank">
+                            <img src="companies/company1.png" alt="BOD Company">
+                        </a>
+                        <!-- Add more companies here -->
                     </div>
                 </div>
             </div>
-            <div class="hero-img-box">
+            
+            <div class="hero-img-box hero-img-desktop">
                 <img src="images/profile.jpg" class="hero-img" alt="Khaled Profile Image">
             </div>
         </div>
@@ -63,42 +76,47 @@ With an engineering background and exposure to cybersecurity, I approach testing
         <div class="container">
             <h2>Skills</h2>
             <div class="skills-grid">
-                 <!-- Testing Skills Card 1 -->
-      <div class="skill-card">
-        <h3>Testing Skills</h3>
-        <ul class="skill-content">
-          <li>Manual Testing</li>
-	  <li>UI/UX Validation</li>
-          <li>API Testing (Postman)</li>
-          <li>Automation (Selenium, TestNG, Cucumber)</li>
-          <li>Performance Testing (JMeter)</li>
-          <li>Cyber Security Basics</li>
-        </ul>
-        <button class="read-more">Read More</button>
-      </div>
+                
+                <!-- Testing Skills Card -->
+                <div class="skill-card">
+                    <h3>Testing Skills</h3>
+                    <ul class="skill-content">
+                        <li>Manual Testing</li>
+                        <li>UI/UX Validation</li>
+                        <li>API Testing (Postman)</li>
+                        <li>Automation (Selenium, TestNG, Cucumber)</li>
+                        <li>Performance Testing (JMeter)</li>
+                        <li>Cyber Security Basics</li>
 
-      <!-- UI/UX Skills Card 2 -->
-      <div class="skill-card">
-        <h3>UI/UX Skills</h3>
-        <ul class="skill-content">
-          <li>Wireframing & Prototyping (Figma)</li>
-          <li>Visual Design & Layouts</li>
-        </ul>
-        <button class="read-more">Read More</button>
-      </div>
+                    </ul>
+                    <button class="read-more">Read More</button>
+                </div>
 
-      <!-- Soft Skills Card 3 -->
-      <div class="skill-card">
-        <h3>Soft Skills</h3>
-        <ul class="skill-content">
-          <li>Problem Solving</li>
-          <li>Teamwork & Collaboration</li>
-          <li>Time Management</li>
-          <li>Project Management</li>
-          <li>Leadership & Mentoring</li>
-        </ul>
-        <button class="read-more">Read More</button>
-      </div>
+                <!-- UI/UX Skills Card -->
+                <div class="skill-card">
+                    <h3>UI/UX Skills</h3>
+                    <ul class="skill-content">
+                        <li>Wireframing & Prototyping (Figma)</li>
+                        <li>Visual Design & Layouts</li>
+                        <li>User Research & Testing</li>
+                        <li>Responsive Design Principles</li>
+                    </ul>
+                    <button class="read-more">Read More</button>
+                </div>
+
+                <!-- Soft Skills Card -->
+                <div class="skill-card">
+                    <h3>Soft Skills</h3>
+                    <ul class="skill-content">
+                        <li>Problem Solving</li>
+                        <li>Teamwork & Collaboration</li>
+                        <li>Time Management</li>
+                        <li>Project Management</li>
+                        <li>Leadership & Mentoring</li>
+                        <li>Effective Communication</li>
+                    </ul>
+                    <button class="read-more">Read More</button>
+                </div>
 
             </div>
         </div>
@@ -108,121 +126,140 @@ With an engineering background and exposure to cybersecurity, I approach testing
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="modal-close">&times;</span>
-            <ul id="modal-text"></ul>
+            <div id="modal-text"></div>
         </div>
     </div>
 
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            
+            <div class="projects-carousel">
+                <button class="carousel-btn prev" aria-label="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="carousel-wrapper">
+                    <div class="carousel-track">
+                        
+                        <!-- Project Card 1 -->
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="projects/project1.png" alt="Athar & Riyada Website">
+                            </div>
+                            <h3>Athar & Riyada Website</h3>
+                            <p class="project-date">DEC 2025</p>
+                            <a href="https://athar-riyada.com/" target="_blank" class="view-project">
+                                View Project <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
 
+                        <!-- Project Card 2 -->
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="projects/project2.png" alt="Website Automation Testing">
+                            </div>
+                            <h3>Website Automation Testing</h3>
+                            <p class="project-date">OCT 2024</p>
+                            <a href="https://github.com/MohanadWael1/depi_grad" target="_blank" class="view-project">
+                                View Project <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
 
-<section id="projects">
-  <div class="container">
-    <h2>Projects</h2>
-    
-    <div class="projects-carousel">
-      <button class="carousel-btn prev">&#10094;</button>
-      
-      <div class="carousel-track">
-        <!-- Project Card 1 -->
-        <div class="project-card">
-          <img src="projects/project1.png" alt="Project 1" class="project-img">
-          <h3>Athar & Riyada Website</h3>
-          <p class="project-date">DEC 2025</p>
-          <a href="https://athar-riyada.com/" target="_blank" class="view-project">View Project</a>
+                        <!-- Project Card 3 -->
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="projects/project3.png" alt="Aqar App Real Estate">
+                            </div>
+                            <h3>Aqar App (Real Estate)</h3>
+                            <p class="project-date">AUG 2024</p>
+                            <a href="#" target="_blank" class="view-project">
+                                View Project <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+
+                        <!-- Project Card 4 -->
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="projects/project4.png" alt="Test Project">
+                            </div>
+                            <h3>Test Project</h3>
+                            <p class="project-date">AUG 2024</p>
+                            <a href="#" target="_blank" class="view-project">
+                                View Project <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <button class="carousel-btn next" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators"></div>
         </div>
+    </section>
 
-        <!-- Project Card 2 -->
-        <div class="project-card">
-          <img src="projects/project2.png" alt="Project 2" class="project-img">
-          <h3>Website Automation Testing</h3>
-          <p class="project-date">Oct 2024</p>
-          <a href="https://github.com/MohanadWael1/depi_grad" target="_blank" class="view-project">View Project</a>
-        </div>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p class="contact-subtitle">Feel free to reach out anytime — I'm open to new opportunities and collaboration.</p>
 
-        <!-- Project Card 3 -->
-        <div class="project-card">
-          <img src="projects/project3.png" alt="Project 3" class="project-img">
-          <h3>Aqar App (Real Estate)</h3>
-          <p class="project-date">Aug 2024</p>
-          <a href="" target="_blank" class="view-project">View Project</a>
-        </div>
+        <div class="contact-wrapper">
 
-<!-- Project Card 4 -->
-        <div class="project-card">
-          <img src="projects/project4.png" alt="Project 4" class="project-img">
-          <h3>Test</h3>
-          <p class="project-date">Aug 2024</p>
-          <a href="" target="_blank" class="view-project">View Project</a>
-       </div>
+            <!-- Left: contact details -->
+            <div class="contact-info">
 
-      </div>
+                <a class="contact-row gmail" href="mailto:kh.ahmednassar@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                    <span>kh.ahmednassar@gmail.com</span>
+                </a>
 
-      
-      </div>
+                <a class="contact-row linkedin" href="https://www.linkedin.com/in/khaled-nassar-3679a5240" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn Profile</span>
+                </a>
 
-      <button class="carousel-btn next">&#10095;</button>
-    </div>
-    
-  </div>
-</section>
+                <a class="contact-row whatsapp" href="https://wa.me/201550545682" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp Chat</span>
+                </a>
 
+                <a class="contact-row phone" href="tel:+201550545682">
+                    <i class="fas fa-phone"></i>
+                    <span>+20 155 054 5682</span>
+                </a>
 
+                <div class="contact-row location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Gharbia, Egypt</span>
+                </div>
 
-<!-- Contact Section -->
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p class="contact-subtitle">Feel free to reach out anytime — I’m open to new opportunities and collaboration.</p>
+            </div>
 
-    <div class="contact-wrapper">
-
-        <!-- Left: contact details -->
-        <div class="contact-info">
-
-            <a class="contact-row gmail" href="mailto:kh.ahmednassar@gmail.com">
-                <i class="fas fa-envelope"></i>
-                <span>kh.ahmednassar@gmail.com</span>
-            </a>
-
-            <a class="contact-row linkedin" href="https://www.linkedin.com/in/khaled-nassar-3679a5240" target="_blank">
-                <i class="fab fa-linkedin"></i>
-                <span>LinkedIn Profile</span>
-            </a>
-
-            <a class="contact-row whatsapp" href="https://wa.me/201550545682" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-                <span>WhatsApp Chat</span>
-            </a>
-
-            <a class="contact-row phone" href="tel:+201550545682">
-                <i class="fas fa-phone"></i>
-                <span>+20 155 054 5682</span>
-            </a>
-
-            <div class="contact-row location">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Gharbia, Egypt</span>
+            <!-- Right: Form -->
+            <div class="contact-form">
+                <form id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message..." rows="6" required></textarea>
+                    <button type="submit" class="send-btn">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
             </div>
 
         </div>
+    </section>
 
-        <!-- Right: Form -->
-        <div class="contact-form">
-            <form action="mailto:kh.ahmednassar@gmail.com" method="POST" enctype="text/plain">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message..." rows="6" required></textarea>
-                <button type="submit" class="send-btn">Send Message</button>
-            </form>
-        </div>
-
-    </div>
-</section>
-
-<footer>
-    <p>© 2025 Khaled Ahmed Nassar. All Rights Reserved.</p>
-</footer>
-
-
-
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Khaled Ahmed Nassar. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
